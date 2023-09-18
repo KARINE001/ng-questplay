@@ -1,4 +1,4 @@
-/// @dev Returns 'Hello Guardian'
-fn hello_guardian() -> felt252 {
-    // Implement this function
-}
+use src::hello::hello_guardian;
+fn hello_guardian() {
+    assert(hello_guardian() == 'Hello Guardian', 'Unexpected return value')
+    }
